@@ -155,7 +155,7 @@ On this assignment, we will give you feedback on style but not deduct points for
 * Lines shorter than 80 characters
 * Javadoc conventions (`@param`, `@return` tags, `/** comments */`, etc.)
 
-A full style guide can be found [here](https://github.com/CaoAssignments/style-guide/blob/main/README.md) and a sample styled file can be found [here](https://github.com/CaoAssignments/style-guide/blob/main/SampleFile.java). If you need any clarifications, feel free to ask on Piazza.
+A full style guide can be found [here](https://github.com/CaoAssignments/style-guide/blob/main/README.md) and a sample styled file can be found [here](https://github.com/CaoAssignments/guides/blob/main/resources/SampleFile.java). If you need any clarifications, feel free to ask on Piazza.
 
 
 ## Example Output for Part 3
