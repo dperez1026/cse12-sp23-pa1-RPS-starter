@@ -32,7 +32,7 @@ public abstract class RPSAbstract implements RPSInterface {
     protected static final String TIE = "It's a tie.";
     protected static final String CPU_MOVE = "I chose %s. ";
     protected static final String THANKS =
-            "Thanks for playing!\nOur most recent games were: ";
+            "Thanks for playing!\nOur most recent games were:";
     protected static final String PROMPT_MOVE =
             "Let's play! What's your move? (Type the move or q to quit)";
 
@@ -55,7 +55,7 @@ public abstract class RPSAbstract implements RPSInterface {
     protected static final int PERCENTAGE_RESIZE = 100;
     protected static final String QUIT = "q";
 
-
+    @Override
     public boolean isValidMove(String move) {
         // TODO
         // Use a loop here
@@ -63,6 +63,7 @@ public abstract class RPSAbstract implements RPSInterface {
         return false;  // dummy return value so code compiles.
     }
 
+    @Override
     public void playRPS(String playerMove, String cpuMove) {
         // TODO
 
@@ -83,6 +84,7 @@ public abstract class RPSAbstract implements RPSInterface {
      *
      * @return representing the move, depending on random int
      */
+    @Override
     public String genCPUMove() {
         // Generate new random number
         int num = rand.nextInt(possibleMoves.length);
@@ -93,6 +95,7 @@ public abstract class RPSAbstract implements RPSInterface {
     /**
      * Print out the end game stats: moves played and win percentages
      */
+    @Override
     public void displayStats() {
         float cpuWinPercent = (float) numCPUWins /
                 (float) numGames * PERCENTAGE_RESIZE;

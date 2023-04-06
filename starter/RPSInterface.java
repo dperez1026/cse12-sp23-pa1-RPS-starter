@@ -17,7 +17,7 @@ public interface RPSInterface {
      *
      * @return representing the move, depending on random int
      */
-    public String genCPUMove();
+    String genCPUMove();
 
     /**
      * Takes the user move, the CPU move, and determines who wins.
@@ -26,7 +26,7 @@ public interface RPSInterface {
      * @param cpuMove    move of the CPU
      * @return -1 for invalid move, 0 for tie, 1 for player win, 2 for cpu win
      */
-    public int determineWinner(String playerMove, String cpuMove);
+    int determineWinner(String playerMove, String cpuMove);
 
     /**
      * Determine if the move is valid
@@ -34,7 +34,7 @@ public interface RPSInterface {
      * @param move The move
      * @return true if the move is valid, false otherwise
      */
-    public boolean isValidMove(String move);
+    boolean isValidMove(String move);
 
     /**
      * Play one game of RPS.
@@ -44,10 +44,10 @@ public interface RPSInterface {
      * @param playerMove move of the player
      * @param cpuMove    move of the CPU
      */
-    public void playRPS(String playerMove, String cpuMove);
+    void playRPS(String playerMove, String cpuMove);
 
     /**
      * Print out the end game stats: moves played and win percentages
      */
-    public void displayStats();
+    void displayStats();
 }

@@ -13,18 +13,16 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 import java.io.*;
-import java.util.*;
 
 public class RPSTester {
     public static final int CPU_WIN_OUTCOME = 2;
     public static final int PLAYER_WIN_OUTCOME = 1;
     public static final int TIE_OUTCOME = 0;
     public static final int INVALID_INPUT_OUTCOME = -1;
-
-    private RPS rpsGame;
-    private RPS pokemonGame;
     String[] defaultMoves = {"scissors", "paper", "rock"};
     String[] pokemon = {"water", "fire", "ice", "ground", "electric"};
+    private RPS rpsGame;
+    private RPS pokemonGame;
 
     /**
      * This sets up the test fixture. JUnit invokes this method before
