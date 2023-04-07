@@ -230,7 +230,7 @@ public class RPSTester {
     public void testRPSMainQuit() {
         String inputString = "q";
         String[] args = new String[]{};
-        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were: \nOur overall stats are:\nI won: NaN%\nYou won: NaN%\nWe tied: NaN%\n";
+        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were:\nOur overall stats are:\nI won: NaN%\nYou won: NaN%\nWe tied: NaN%\n";
         checkStandardOutput(inputString, args, expectedOutput);
     }
 
@@ -238,7 +238,7 @@ public class RPSTester {
     public void testRPSMainShortGame() {
         String inputString = "rock\npaper\nscissors\nq\n";
         String[] args = defaultMoves;
-        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose rock. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were: \nMe: paper, You: scissors\nMe: rock, You: paper\nMe: scissors, You: rock\nOur overall stats are:\nI won: 0.00%\nYou won: 100.00%\nWe tied: 0.00%\n";
+        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose rock. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were:\nMe: paper, You: scissors\nMe: rock, You: paper\nMe: scissors, You: rock\nOur overall stats are:\nI won: 0.00%\nYou won: 100.00%\nWe tied: 0.00%\n";
         checkStandardOutput(inputString, args, expectedOutput);
     }
 
@@ -246,7 +246,7 @@ public class RPSTester {
     public void testRPSMainLongGame() {
         String inputString = "rock\npaper\nscissors\nrock\npaper\nscissors\nq\n";
         String[] args = defaultMoves;
-        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose rock. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. I win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were: \nMe: paper, You: scissors\nMe: paper, You: paper\nMe: paper, You: rock\nMe: paper, You: scissors\nMe: rock, You: paper\nMe: scissors, You: rock\nOur overall stats are:\nI won: 16.67%\nYou won: 66.67%\nWe tied: 16.67%\n";
+        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose rock. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. I win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nI chose paper. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were:\nMe: paper, You: scissors\nMe: paper, You: paper\nMe: paper, You: rock\nMe: paper, You: scissors\nMe: rock, You: paper\nMe: scissors, You: rock\nOur overall stats are:\nI won: 16.67%\nYou won: 66.67%\nWe tied: 16.67%\n";
         checkStandardOutput(inputString, args, expectedOutput);
     }
 
@@ -254,7 +254,7 @@ public class RPSTester {
     public void testRPSMainInvalidMoves() {
         String inputString = "rock\nwater\nice\nq\n";
         String[] args = defaultMoves;
-        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThat is not a valid move. Please try again.\nLet's play! What's your move? (Type the move or q to quit)\nThat is not a valid move. Please try again.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were: \nMe: scissors, You: rock\nOur overall stats are:\nI won: 0.00%\nYou won: 100.00%\nWe tied: 0.00%\n";
+        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose scissors. You win.\nLet's play! What's your move? (Type the move or q to quit)\nThat is not a valid move. Please try again.\nLet's play! What's your move? (Type the move or q to quit)\nThat is not a valid move. Please try again.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were:\nMe: scissors, You: rock\nOur overall stats are:\nI won: 0.00%\nYou won: 100.00%\nWe tied: 0.00%\n";
         checkStandardOutput(inputString, args, expectedOutput);
     }
 
@@ -262,7 +262,7 @@ public class RPSTester {
     public void testRPSMainPokemonMoves() {
         String inputString = "water\nfire\nice\nground\nelectric\nq\n";
         String[] args = pokemon;
-        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose fire. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose ice. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose fire. I win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose ground. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nI chose electric. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were: \nMe: electric, You: electric\nMe: ground, You: ground\nMe: fire, You: ice\nMe: ice, You: fire\nMe: fire, You: water\nOur overall stats are:\nI won: 20.00%\nYou won: 40.00%\nWe tied: 40.00%\n";
+        String expectedOutput = "Let's play! What's your move? (Type the move or q to quit)\nI chose fire. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose ice. You win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose fire. I win.\nLet's play! What's your move? (Type the move or q to quit)\nI chose ground. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nI chose electric. It's a tie.\nLet's play! What's your move? (Type the move or q to quit)\nThanks for playing!\nOur most recent games were:\nMe: electric, You: electric\nMe: ground, You: ground\nMe: fire, You: ice\nMe: ice, You: fire\nMe: fire, You: water\nOur overall stats are:\nI won: 20.00%\nYou won: 40.00%\nWe tied: 40.00%\n";
         checkStandardOutput(inputString, args, expectedOutput);
     }
 }
